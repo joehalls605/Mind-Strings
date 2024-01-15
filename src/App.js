@@ -2,8 +2,9 @@ import React from 'react';
 import navalQuotes from './Quotes/navalQuotes';
 
 function App() {
-  // Since there's no category in navalQuotes, we can directly use the array
-  const items = navalQuotes.map((quote, index) => <p key={index}>{quote.quote}</p>);
+  const categoryToDisplay = "wisdom";
+  const filteredQuotes = navalQuotes.filter(item => item.category === categoryToDisplay);
+  const items = filteredQuotes.map((quote, index) => <p key={index}>{quote.quote}</p>);
 
   return (
     <div className="bg-gray-300">
