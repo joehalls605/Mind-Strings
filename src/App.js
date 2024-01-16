@@ -3,7 +3,11 @@ import quotes from './Quotes/quotes';
 
 function App() {
 
-  const [selectedCategory, setSelectedCategory] = useState("wisdom");
+
+const randomIndex = Math.floor(Math.random() * quotes.length);
+const randomCategory = quotes[randomIndex].category;
+
+const [selectedCategory, setSelectedCategory] = useState(randomCategory);
 
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
@@ -19,17 +23,24 @@ function App() {
       <h1 className='text-5xl py-5 font-sans'>Mind Strings</h1>
       <p className='text-2xl font-sans pb-5'>Exporting quotes for life and work</p>
       <div className='flex items-center pb-5 text-lg font-sans'>
-        <label className="block mr-2 text-xl font-sans" htmlFor="category">Choose a category</label>
+        <label className="block mr-2 text-xl font-sans" htmlFor="category">Category</label>
         <select id="category" value={selectedCategory} onChange={handleCategoryChange} className="italic text-2xl">
-          <option value="wisdom">Wisdom</option>
+        <option value="life">Life</option>
           <option value="happiness">Happiness</option>
+          <option value="productivity">Productivity</option>
+        </select>
+        <label className="block mr-2 text-xl font-sans" htmlFor="category">Author</label>
+        <select id="category" value={selectedCategory} onChange={handleCategoryChange} className="italic text-2xl">
           <option value="life">Life</option>
+          <option value="happiness">Happiness</option>
+          <option value="productivity">Productivity</option>
         </select>
       </div>
       <div className='mt-40'>
       <div className=''>{items}</div>
       </div>
     </div>
+    
   );
 }
 
