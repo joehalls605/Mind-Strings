@@ -70,16 +70,6 @@ const quotes = [
     quote: "Your business and your relationships should be set up so that they can run as well without you as they do with you",
   },
   {
-    category: 'creativity',
-    author: 'Paul Graham',
-    quote: "The best way to predict the future is to invent it",
-  },
-  {
-    category: 'creativity',
-    author: 'Scott Adams',
-    quote: "Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep",
-  },
-  {
     category: 'productivity',
     author: 'Scott Adams',
     quote: "You can't have a million-dollar dream with a minimum-wage work ethic",
@@ -93,6 +83,51 @@ const quotes = [
     category: 'productivity',
     author: 'Scott Adams',
     quote: "A goal is a specific objective that you either achieve or don't sometime in the future. A system is something you do on a regular basis that increases your odds of happiness in the short term and the long term",
+  },
+  {
+    category: 'happiness',
+    author: 'Paul Graham',
+    quote: "The key to being happy is knowing you have the power to choose what to accept and what to let go",
+  },
+  {
+    category: 'happiness',
+    author: 'Paul Graham',
+    quote: "Happiness is not something ready-made. It comes from your own actions",
+  },
+  {
+    category: 'happiness',
+    author: 'Scott Adams',
+    quote: "I'm happy because I love what I do. I love my work, I love my hobbies, I love my family and friends. Happiness is a choice, and I choose to be happy",
+  },
+  {
+    category: 'happiness',
+    author: 'Scott Adams',
+    quote: "Happiness is not a goal; it's a by-product of a life well-lived",
+  },
+  {
+    category: 'productivity',
+    author: 'Paul Graham',
+    quote: "The best productivity is two good projects"
+  },
+  {
+    category: 'productivity',
+    author: 'Paul Graham',
+    quote: "Keep iterating your work until it’s the best in the world"
+  },
+  {
+    category: 'productivity',
+    author: 'Paul Graham',
+    quote: "Don't worry about people stealing your ideas. If your ideas are any good, you'll have to ram them down people's throats"
+  },
+  {
+    category: 'productivity',
+    author: 'Paul Graham',
+    quote: "The most important thing is not to be paralyzed by the seeming complexity of the problem, but just to begin"
+  },
+  {
+    category: 'life',
+    author: 'Paul Graham',
+    quote: "It's hard to do a really good job on anything you don't think about in the shower"
   },
 ];
 
